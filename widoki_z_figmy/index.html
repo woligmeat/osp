@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PSR</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+          integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+          integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+            integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</head>
+<body>
+
+<header id="header" class="fixed-top">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.svg">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#oprogramie">O programie</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ekozwroty">EKOzwrot</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#HomeForm">Formularz</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Regulamin</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Kontakt</a>
+                    </li>
+
+                    <li class="nav-item nav-item-login">
+                        <a class="nav-link" href="login.html">Zaloguj się</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main id="main">
+    <section class="home-section home-slider home-section-1">
+        <div id="homeCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-item-wrap">
+                        <img src="assets/img/top_header.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <h5><span>Ekozwroty</span>
+                                na straży serca</h5>
+                            <p>Program pomocowy skierowany<br>
+                                do Ochotniczych Straży Pożarnych</p>
+                            <a class="btn btn-primary" href="#HomeForm">Weź udział</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--            <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">-->
+            <!--                <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+            <!--                <span class="visually-hidden">Previous</span>-->
+            <!--            </button>-->
+            <!--            <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">-->
+            <!--                <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+            <!--                <span class="visually-hidden">Next</span>-->
+            <!--            </button>-->
+        </div>
+
+        <div class="homeCarouselLogo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="images-wrap">
+                            <div class="images">
+                                <div>
+                                    <img src="assets/img/home_top_slider/gecon.png">
+                                </div>
+
+                                <div>
+                                    <img src="assets/img/home_top_slider/inpost.png">
+                                </div>
+
+                                <div>
+                                    <img src="assets/img/home_top_slider/zwiazekochotniczych.png">
+                                </div>
+
+                                <div>
+                                    <img src="assets/img/home_top_slider/pierwszy_ratownik.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-section home-section-2" id="oprogramie">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section_title">
+                        <h2>O programie</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        Ekozwroty na straży serca jest programem skierowanym dla Ochotniczych Straży Pożarnych
+                        realizowanym we współpracy z Fundacją Odzyskaj Środowisko, InPost, Gecon. Główną ideą Programu
+                        jest poprawa bezpieczeństwa publicznego poprzez zwiększenie dostępu do defibrylatorów
+                        zlokalizowanych na paczkomatach InPost oraz edukacja ekologiczna społeczeństwa wyrażona przez
+                        zbiórkę selektywną niewykorzystywanego sprzętu elektrycznego, odzieży butów, książek i innych
+                        artykułów zgodnych z regulaminem. Zakładane wyniki akcji:
+                    </p>
+                    <ul>
+                        <li>
+                            Wyposażenie jak największej ilości paczkomatów InPost w AED ratujące życie
+                        </li>
+                        <li>
+                            Uzyskanie możliwie największej ilości EKOzwrotów i przekazanie ich profesjonalnym firmom
+                            działającym zgodnie z ideą gospodarki obiegu zamkniętego
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-section home-section-3">
+        <div class="container">
+            <div class="row home_s_r_3-1 align-items-center">
+                <div class="col-md-5">
+                    <img src="assets/img/s3_1.png">
+                </div>
+                <div class="col-md-7">
+                    <div class="section_title">
+                        <h2>Dlaczego <span>AED?</span></h2>
+                    </div>
+                    <p>ZRM (Zespół Ratownictwa Medycznego) w Polsce do NZK (Nagłego Zatrzymania Krążenia) wyjeżdża
+                        średnio ponad 40 tys. razy. Tylko 5-10% tych pacjentów przeżywa. W tym przypadku kluczowy jest
+                        czas w jakim poszkodowany otrzyma pomoc, nieodwracalne zmiany następują już po pierwszych 4
+                        minutach. Fachowo wykonane RKO (Resuscytacja Krążeniowo Oddechowa) zwiększa szanse na przeżycie,
+                        ale dopiero zastosowanie AED podnosi je do 50-70%. Im większa popularyzacja i dostępność
+                        defibrylatorów. Tym szanse na przeżycie rosną.</p>
+                </div>
+            </div>
+
+            <div class="row home_s_r_3-2 align-items-center">
+                <div class="col-md-7">
+                    <div class="section_title">
+                        <h2>Dlaczego <span>pierwszy ratownik?</span></h2>
+                    </div>
+
+                    <p>
+                        Pierwszy Ratownik – jeden z kluczowych elementów łańcucha przeżycia. Odpowiednio przeszkolona
+                        osoba z doświadczeniem i wyposażeniem do udzielenia pomocy przedmedycznej. Idealnie wypełnia
+                        pierwsze minuty „złotej godziny”, wykonując niezbędne czynności ratujące życie. Angażując w
+                        projekt ratowników OSP dążymy do zabezpieczenia medycznego całkowicie wykluczonych dotychczas
+                        regionów Polski. Pierwszy Ratownik ratują i szkolą z zakresu pierwszej pomocy, co w połączeniu z
+                        popularyzacją i zwiększeniem dostępności do AED, spina pierwszy etap sytemu ratowania życia.
+                    </p>
+                </div>
+
+                <div class="col-md-5">
+                    <img src="assets/img/s3_2.png">
+                </div>
+            </div>
+
+            <div class="home_s_r_3-3">
+                <div class="row  align-items-center">
+                    <div class="col-md-6">
+                        <img src="assets/img/s3_3.png">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Nadając EKOzwroty<br>ratujemy życie!</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="home-section home-section-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section_title">
+                        <h2>Jak wygrać <span>nagrody?</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="home_accordion">
+                        <div class="accordion" id="accordionS5">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed accordion-button-hidden" type="button">
+                                        <span>Zarejestruj się -&nbsp;<a href="#HomeForm">wypełnij formularz</a></span>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                        Otrzymaj indywidualny kod
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                     data-bs-parent="#accordionS5">
+                                    <div class="accordion-body">
+                                        <p>
+                                            <strong>Co to jest indywidualny kod?</strong><br>
+                                            Instytucje grywalizują ze sobą w oparciu o usługę EKOzwrotów. Twój
+                                            indywidualny kod będzie identyfikował Twoją instytucję w czasie nadawania
+                                            EKOzwrotów. Im więcej EKOzwrotów z Twoim kodem do nas trafi, tym większa
+                                            szansa na nagrody. Podziel się swoim kodem w Social Mediach i zachęć innych
+                                            do wysyłania EKOzwrotów.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                        Nadawaj EKOzwroty i zbieraj punkty
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                     data-bs-parent="#accordionS5">
+                                    <div class="accordion-body">
+                                        <p>
+                                            <strong>Poznaj EKOzwroty</strong><br>
+                                            Jeśli masz w domu zbędne, ale sprawne przedmioty, ta usługa jest dla Ciebie.
+                                            Możesz oddać m.in. książki, tekstylia, artykuły dziecięce, elektronikę i
+                                            obuwie
+                                        </p>
+
+                                        <p class="colored">Pamiętaj, że usługa jest całkowicie darmowa.
+                                            Każdy EKOzwrot z Twoim indywidualnym kodem, to kolejne punkty dla Twojego
+                                            OSP
+                                            Za każdy kilogram nadanych przez OSP produktów, jednostka otrzymuje 1
+                                            punkt.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>
+                        Nagroda główna - AED z kapsułą, trafi do każdej jednostki, która w trakcie trwania programu
+                        zdobędzie minimum 7000 punktów.
+                    </h3>
+                    <br>
+                    <p>Defibrylator bez kapsuły otrzymacie, jeśli Wasz licznik wskaże minimum <strong>4500
+                        punktów</strong>.</p>
+                    <p>Jeśli macie jasno określony cel na drabince punktowej, a jego realizacja przeciągnie się w
+                        czasie, śmiało będziecie mogli zamrozić swoje punkty na kolejną edycję programu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-section home-section-6" id="ekozwroty">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section_title">
+                        <h2>Co to jest <span>EKOzwrot?</span></h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        To ogólnopolska usługa realizowana przez Fundację Odzyskaj Środowisko oraz InPost. Jej celem
+                        jest to, by nadać zbędnym, ale sprawnym przedmiotom drugie życie. Wszystkie artykuły mogące
+                        stanowić EKOzwrot szczegółowo opisane są w regulaminie.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Nadaj rzeczom nowe story.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-section home-section-7">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section_title">
+                        <h2>Co możesz <span>oddać?</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-4">
+                    <div class="home_iconbox_2">
+                        <div class="home_iconbox_2-img">
+                            <img src="assets/img/ic_laptop.svg">
+                        </div>
+                        <p>Laptopy,<br>
+                            komputery</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <div class="home_iconbox_2">
+                        <div class="home_iconbox_2-img">
+                            <img src="assets/img/ic_telefony.svg">
+                        </div>
+                        <p>Tablety,<br>
+                            telefony</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <div class="home_iconbox_2">
+                        <div class="home_iconbox_2-img">
+                            <img src="assets/img/ic_tekstylia.svg">
+                        </div>
+                        <p>Tekstylia</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <div class="home_iconbox_2">
+                        <div class="home_iconbox_2-img">
+                            <img src="assets/img/ic_maleagd.svg">
+                        </div>
+                        <p>Małe AGD</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <div class="home_iconbox_2">
+                        <div class="home_iconbox_2-img">
+                            <img src="assets/img/ksiazki.svg">
+                        </div>
+                        <p>Książki</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <div class="home_iconbox_2">
+                        <div class="home_iconbox_2-img">
+                            <img src="assets/img/ic_radia.svg">
+                        </div>
+                        <p>Radia,<br>
+                            sprzęt audio</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <div class="home_iconbox_2">
+                        <div class="home_iconbox_2-img">
+                            <img src="assets/img/ic_video.svg">
+                        </div>
+                        <p>Video,<br>
+                            fotografia</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <div class="home_iconbox_2">
+                        <div class="home_iconbox_2-img">
+                            <img src="assets/img/ic_zabawki.svg">
+                        </div>
+                        <p>Zabawki<br>
+                            elektroniczne</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <div class="home_iconbox_2">
+                        <div class="home_iconbox_2-img">
+                            <img src="assets/img/ic_artykuly.svg">
+                        </div>
+                        <p>Artykuły<br>
+                            dziecięcie</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <div class="home_iconbox_2">
+                        <div class="home_iconbox_2-img">
+                            <img src="assets/img/ic_elektro.svg">
+                        </div>
+                        <p>Elektronarzędzia</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <div class="home_iconbox_2">
+                        <div class="home_iconbox_2-img">
+                            <img src="assets/img/ic_obuwie.svg">
+                        </div>
+                        <p>Obuwie</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <div class="home_iconbox_2">
+                        <div class="home_iconbox_2-img">
+                            <img src="assets/img/ic_drony.svg">
+                        </div>
+                        <p>Drony,<br>
+                            sprzęt sportowy</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Nie używasz? Przynieś do swojej najbliższej jednostki OSP. Pomóż zebrać wymagane punkty. Każdy
+                        EKOzwrot się liczy.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="home-section home-section-8">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form_institution">
+                        <h3>Lista OSP</h3>
+
+                        <div class="form_institution-input">
+                            <input type="text" placeholder="Szukaj...">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
+                                     fill="none">
+                                    <path d="M9.66667 16.2767C13.3486 16.2767 16.3333 13.2919 16.3333 9.61003C16.3333 5.92813 13.3486 2.94336 9.66667 2.94336C5.98477 2.94336 3 5.92813 3 9.61003C3 13.2919 5.98477 16.2767 9.66667 16.2767Z"
+                                          stroke="#64748B" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M17.9998 17.9432L14.6665 14.6099" stroke="#64748B" stroke-width="1.5"
+                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="form_institution-list">
+                            <table class="table">
+                                <thead class="sticky-header">
+                                <tr>
+                                    <th>Nazwa Instytucji</th>
+                                    <th>Kod</th>
+                                    <th>Punkty</th>
+                                </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                <tr>
+                                    <td>Zespół Szkół Ekonomicznych w Radomiu</td>
+                                    <td>KIE1111</td>
+                                    <td>1000</td>
+                                </tr>
+                                <tr>
+                                    <td>Zespół Szkół Ekonomicznych w Radomiu</td>
+                                    <td>KIE1111</td>
+                                    <td>1000</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center">
+                    <a href="#" class="btn btn-primary">Zrób EKOzwrot</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="home-section home-section-9 section-form" id="HomeForm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+
+                    <form>
+                        <div class="form_head">
+                            <h2>Formularz zgłoszeniowy</h2>
+
+                            <div class="form_steps">
+                                <div class="form-one-step form-one-step-active">1</div>
+                                <div class="form-one-step">2</div>
+                                <div class="form-one-step">3</div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form_step form_step-1">
+                            <div class="mb-3">
+                                <label for="form_koordynator" class="form-label form-label-required">Przedstawiciel
+                                    OSP</label>
+                                <input type="text" placeholder="Imię i nazwisko" class="form-control"
+                                       id="form_koordynator" name="form_koordynator" aria-describedby="koordynator"
+                                       required>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="form_koordynator_telefon" class="form-label form-label-required">Numer
+                                            telefonu</label>
+                                        <input type="text" placeholder="+48 123-123-123" class="form-control"
+                                               id="form_koordynator_telefon" name="form_koordynator_telefon"
+                                               aria-describedby="telefonKoordynatora" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="form_koordynator_email" class="form-label form-label-required">Adres
+                                            e-mail Koordynatora</label>
+                                        <input type="email" placeholder="Adres e-mail" class="form-control"
+                                               id="form_koordynator_email" name="form_koordynator_email"
+                                               aria-describedby="emailKoordynatora" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="form_instyt" class="form-label form-label-required">Nazwa OSP</label>
+                                <input type="text" placeholder="Nazwa OSP" class="form-control" id="form_instyt"
+                                       name="form_instyt" aria-describedby="nazwaInstytucji" required>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="form_ulica" class="form-label form-label-required">Ulica</label>
+                                        <input type="text" placeholder="Ulica" class="form-control" id="form_ulica"
+                                               name="form_ulica" aria-describedby="ulica" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="form_nrbud" class="form-label form-label-required">Nr
+                                            budynku</label>
+                                        <input type="text" placeholder="Nr budynku" class="form-control"
+                                               id="form_nrbud" name="form_nrbud" aria-describedby="nrBud" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="form_miasto" class="form-label form-label-required">Miasto</label>
+                                        <select class="form-select" id="form_miasto" name="form_miasto"
+                                                aria-label="miasto" required>
+                                            <option selected>Miasto</option>
+                                            <option value="kielce">Kielce</option>
+                                            <option value="Kraków">Kraków</option>
+                                            <option value="Warszawa">Warszawa</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="form_zip" class="form-label form-label-required">Kod
+                                            pocztowy</label>
+                                        <input type="text" placeholder="00-000" class="form-control" id="form_zip"
+                                               name="form_zip" aria-describedby="kodPocztowy" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="check1">
+                                <label class="form-check-label" for="check1">Zaznacz wszystkie oświadczenia i
+                                    zgody</label>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="check2">
+                                <label class="form-check-label" for="check2">Zapoznałam/Zapoznałem się i akceptuję
+                                    Regulamin programu “Ekozwroty na straży serca” i akceptuję jego
+                                    postanowienia.</label>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="check3">
+                                <label class="form-check-label" for="check3">Oświadczam, że jestem osobą
+                                    pełnoletnią.</label>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="check4">
+                                <label class="form-check-label" for="check4">Oświadczam, że nie jestem pracownikiem
+                                    Fundacji Odzyskaj Środowisko oraz Gecon</label>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="check5">
+                                <label class="form-check-label" for="check5">
+                                    Wyrażam zgodę na przetwarzanie przez Organizatora programu “Ekozwroty na straży
+                                    serca”, tj. Fundacja Odzyskaj Środowisko z siedzibą w Bogumiłowie przy ul. Nowa 2,
+                                    97-410 Kleszczów, moich danych osobowych, podanych przeze mnie w Formularzu
+                                    Zgłoszeniowym, w celach związanych z organizacją i przeprowadzaniem ww. programu, w
+                                    szczególności w celu wydania nagród i rozpatrzenia ewentualnych reklamacji przez
+                                    Organizatora.
+                                </label>
+                            </div>
+
+                            <div class="mb-3 form-btn">
+                                <button class="next_button btn btn-primary">Dalej</button>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form_step form_step-2">
+                            <div class="mb-3">
+                                <label for="form_email" class="form-label form-label-required">Login</label>
+                                <input type="email" placeholder="Adres e-mail" class="form-control"
+                                       id="form_email" name="form_email" aria-describedby="email"
+                                       required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="form_pass_1" class="form-label form-label-required">Hasło</label>
+                                <input type="email" placeholder="Hasło" class="form-control"
+                                       id="form_pass_1" name="form_pass_1" aria-describedby="email"
+                                       required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="form_pass_2" class="form-label form-label-required">Powtórz hasło</label>
+                                <input type="email" placeholder="Powtórz hasło" class="form-control"
+                                       id="form_pass_2" name="form_pass_2" aria-describedby="email"
+                                       required>
+                                <div id="passHelp" class="form-text">Hasło powinno być nie krótsze niż 8 znaków,
+                                    zawierać przynajmniej jedną wielką literę, małą literę i cyfrę.
+                                </div>
+
+                            </div>
+
+                            <div class="mb-3 form-btn d-flex justify-content-between my-5 gap-3">
+                                <button class="prev_button btn btn-primary">Wstecz</button>
+                                <button class="next_button btn btn-primary">Dalej</button>
+                            </div>
+                        </div>
+
+
+                        <div class="form_step form_step-3">
+                            <div class="thank_text">
+                                <h3>Dziękujemy.</h3>
+                                <h3>Twoje zgłoszenie zostało przyjęte.</h3>
+                                <p>
+                                    Na podany w formularzu adres e-mail wysłaliśmy potwierdzenie rejestracji. W
+                                    przypadku nieotrzymania wiadomości e-mail, sprawdź proszę folder SPAM.
+                                </p>
+                            </div>
+
+                            <div class="mb-3 form-btn d-flex justify-content-end">
+                                <button class="end_button btn btn-primary">Zakończ</button>
+                            </div>
+                        </div>
+
+
+                        <!--                        <button type="submit" class="btn btn-primary">Dalek</button>-->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-section home-section-10">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="home-logo_slider">
+                        <div class="home-logo_slide">
+                            <img src="assets/img/home_slider/Warstwa_1.png">
+                        </div>
+                        <div class="home-logo_slide">
+                            <img src="assets/img/home_slider/logo_1_.png">
+                        </div>
+                        <div class="home-logo_slide">
+                            <img src="assets/img/home_slider/logo_21.png">
+                        </div>
+                        <div class="home-logo_slide">
+                            <img src="assets/img/home_slider/image_14.png">
+                        </div>
+                        <div class="home-logo_slide">
+                            <img src="assets/img/home_slider/image_18.png">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <img src="assets/img/footer_logo.svg">
+                </div>
+                <div class="col-md-5">
+                    <h3>Fundacja Odzyskaj Środowisko</h3>
+                    <ul>
+                        <li class="footer_address">
+                            Karola Olszewskiego 20, 25-663 Kielce
+                        </li>
+                        <li class="footer_phone">
+                            <a href="tel:+48 789 375 514">789 375 514</a>
+                            <a href="tel:+48 514 844 967">514 844 967</a>
+                        </li>
+                        <li class="footer_mail">
+                            <a href="mailto:pierwszyratownik@odzyskajsrodowisko.pl">pierwszyratownik@odzyskajsrodowisko.pl</a>
+                        </li>
+
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-12 d-flex align-items-center justify-content-end">
+                    <ul class="link_sm">
+                        <li>Śledź nas:</li>
+                        <li><a href="#"><img src="assets/img/footer_imgs/Vector.png"></a></li>
+                        <li><a href="#"><img src="assets/img/footer_imgs/Insta.png"></a></li>
+                        <li><a href="#"><img src="assets/img/footer_imgs/Fb.png"></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-12 d-flex align-items-center justify-content-start">
+                    <ul class="links">
+                        <li><a href="#">Regulamin </a></li>
+                        <li><a href="#">Regulamin formularza</a></li>
+                        <li><a href="#">Polityka prywatności</a></li>
+                        <li><a href="#">Katalog nagród</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PSR</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+          integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+          integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+            integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 " id="left-panel">
+            <div class="left-panel-wrap navbar navbar-expand-md">
+                <div class="left-panel-logo">
+                    <img src="assets/img/logo_v2_p.png">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="left-panel-menu collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="admin_menu">
+                        <li class="menu-link">
+                            <a href="panel_1.html" class="menu-link-informations">Strona główna</a>
+                        </li>
+                        <li class="menu-link ">
+                            <a href="panel_2.html" class="menu-link-documents">Dokumenty</a>
+                        </li>
+                        <li class="menu-link menu-link-active">
+                            <a href="panel_3.html" class="menu-link-foto">Fotorelacja</a>
+                        </li>
+                        <li class="menu-link">
+                            <a href="panel_4.html" class="menu-link-points">Punkty</a>
+                        </li>
+                        <li class="menu-link">
+                            <a href="panel_5.html" class="menu-link-profile">Twój profil</a>
+                        </li>
+                        <li class="menu-link">
+                            <a href="panel_6.html" class="menu-link-logout">Wyloguj się</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10" id="main-content">
+            <div class="main-content-wrap">
+                <div class="panel_3_1">
+                    <p>Twój indywidualny kod: <span>KIE0001</span></p>
+                    <ul>
+                        <li>Znajdź najbliższy czerwony pojemnik na elektryczne śmieci.</li>
+                        <li>Zrób zdjęcia, by pokazać innym co można do niego wrzucać.</li>
+                        <li>Prześlij fotorelację do 15 grudnia 2023 roku.</li>
+                    </ul>
+
+                </div>
+
+                <div class="panel_upload_file">
+                    <h2>Dodaj fotorelacje</h2>
+                    <div class="panel_upload_file-wrap">
+                        <form>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48"
+                                 fill="none">
+                                <path d="M32.5 32L24.5 24L16.5 32" stroke="black" stroke-width="2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                                <path d="M24.5 24V42" stroke="black" stroke-width="2" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                                <path d="M41.2799 36.78C43.2306 35.7165 44.7716 34.0337 45.6597 31.9972C46.5477 29.9607 46.7323 27.6864 46.1843 25.5334C45.6363 23.3803 44.3869 21.471 42.6333 20.1069C40.8796 18.7427 38.7216 18.0014 36.4999 18H33.9799C33.3745 15.6585 32.2462 13.4846 30.6798 11.642C29.1134 9.79927 27.1496 8.33567 24.9361 7.36118C22.7226 6.3867 20.317 5.92669 17.9002 6.01573C15.4833 6.10478 13.1181 6.74057 10.9823 7.8753C8.84649 9.01003 6.99574 10.6142 5.56916 12.5671C4.14259 14.5201 3.1773 16.771 2.74588 19.1508C2.31446 21.5305 2.42813 23.977 3.07835 26.3065C3.72856 28.636 4.8984 30.7877 6.49992 32.6"
+                                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M32.5 32L24.5 24L16.5 32" stroke="black" stroke-width="2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                            <div>
+                                <p>Wybierz plik lub przeciągnij tutaj</p>
+                                <small>JPG, PNG, PDF. Rozmiar pliku nie większy niż 5MB.</small>
+                            </div>
+                            <button class="btn btn-primary">Wybierz plik</button>
+                        </form>
+
+                    </div>
+
+
+                    <div class="added_files">
+                        <h3>Twoja fotorelacja została dodana.</h3>
+                        <p>Dodane pliki</p>
+                        <div class="added_files-wrap">
+                            <div class="added_file">
+                                <div class="added_files-img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                         fill="none">
+                                        <path d="M9.75293 10.5C10.0484 10.5 10.341 10.4418 10.614 10.3287C10.887 10.2157 11.135 10.0499 11.3439 9.84099C11.5529 9.63206 11.7186 9.38402 11.8317 9.11104C11.9447 8.83806 12.0029 8.54547 12.0029 8.25C12.0029 7.95453 11.9447 7.66194 11.8317 7.38896C11.7186 7.11598 11.5529 6.86794 11.3439 6.65901C11.135 6.45008 10.887 6.28434 10.614 6.17127C10.341 6.0582 10.0484 6 9.75293 6C9.15619 6 8.5839 6.23705 8.16194 6.65901C7.73998 7.08097 7.50293 7.65326 7.50293 8.25C7.50293 8.84674 7.73998 9.41903 8.16194 9.84099C8.5839 10.2629 9.15619 10.5 9.75293 10.5Z"
+                                              fill="#439117"/>
+                                        <path d="M21 21C21 21.7956 20.6839 22.5587 20.1213 23.1213C19.5587 23.6839 18.7956 24 18 24H6C5.20435 24 4.44129 23.6839 3.87868 23.1213C3.31607 22.5587 3 21.7956 3 21V3C3 2.20435 3.31607 1.44129 3.87868 0.87868C4.44129 0.316071 5.20435 0 6 0L14.25 0L21 6.75V21ZM6 1.5C5.60218 1.5 5.22064 1.65804 4.93934 1.93934C4.65804 2.22064 4.5 2.60218 4.5 3V18L7.836 14.664C7.95422 14.5461 8.10843 14.4709 8.27417 14.4506C8.43992 14.4302 8.60773 14.4657 8.751 14.5515L12 16.5L15.2355 11.97C15.2988 11.8815 15.3806 11.8078 15.4753 11.754C15.5699 11.7003 15.6751 11.6678 15.7836 11.6588C15.8921 11.6498 16.0012 11.6645 16.1034 11.702C16.2056 11.7394 16.2985 11.7986 16.3755 11.8755L19.5 15V6.75H16.5C15.9033 6.75 15.331 6.51295 14.909 6.09099C14.4871 5.66903 14.25 5.09674 14.25 4.5V1.5H6Z"
+                                              fill="#439117"/>
+                                    </svg>
+                                </div>
+                                <div class="added_files-info">
+                                    <div class="added_files-info-text">
+                                        <span class="filename">Umowa_NazwaInstytucji.pdf</span>
+                                        <span class="filesize">4.7MB</span>
+                                    </div>
+                                    <div class="progress" role="progressbar" aria-label="Basic example"
+                                         aria-valuenow="25"
+                                         aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 25%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="added_file_added">
+                                <div class="added_files-img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                         fill="none">
+                                        <path d="M9.75293 10.5C10.0484 10.5 10.341 10.4418 10.614 10.3287C10.887 10.2157 11.135 10.0499 11.3439 9.84099C11.5529 9.63206 11.7186 9.38402 11.8317 9.11104C11.9447 8.83806 12.0029 8.54547 12.0029 8.25C12.0029 7.95453 11.9447 7.66194 11.8317 7.38896C11.7186 7.11598 11.5529 6.86794 11.3439 6.65901C11.135 6.45008 10.887 6.28434 10.614 6.17127C10.341 6.0582 10.0484 6 9.75293 6C9.15619 6 8.5839 6.23705 8.16194 6.65901C7.73998 7.08097 7.50293 7.65326 7.50293 8.25C7.50293 8.84674 7.73998 9.41903 8.16194 9.84099C8.5839 10.2629 9.15619 10.5 9.75293 10.5Z"
+                                              fill="#439117"/>
+                                        <path d="M21 21C21 21.7956 20.6839 22.5587 20.1213 23.1213C19.5587 23.6839 18.7956 24 18 24H6C5.20435 24 4.44129 23.6839 3.87868 23.1213C3.31607 22.5587 3 21.7956 3 21V3C3 2.20435 3.31607 1.44129 3.87868 0.87868C4.44129 0.316071 5.20435 0 6 0L14.25 0L21 6.75V21ZM6 1.5C5.60218 1.5 5.22064 1.65804 4.93934 1.93934C4.65804 2.22064 4.5 2.60218 4.5 3V18L7.836 14.664C7.95422 14.5461 8.10843 14.4709 8.27417 14.4506C8.43992 14.4302 8.60773 14.4657 8.751 14.5515L12 16.5L15.2355 11.97C15.2988 11.8815 15.3806 11.8078 15.4753 11.754C15.5699 11.7003 15.6751 11.6678 15.7836 11.6588C15.8921 11.6498 16.0012 11.6645 16.1034 11.702C16.2056 11.7394 16.2985 11.7986 16.3755 11.8755L19.5 15V6.75H16.5C15.9033 6.75 15.331 6.51295 14.909 6.09099C14.4871 5.66903 14.25 5.09674 14.25 4.5V1.5H6Z"
+                                              fill="#439117"/>
+                                    </svg>
+                                </div>
+                                <div class="added_files-info">
+                                    <div class="added_files-info-text">
+                                        <span class="filename">Umowa_NazwaInstytucji.pdf
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="3" height="4"
+                                                 viewBox="0 0 3 4" fill="none"><circle cx="1.5" cy="2" r="1.5"
+                                                                                       fill="#767676"/></svg>
+                                            <a href="#">Podgląd</a>
+                                        </span>
+                                        <span class="filesize">4.7MB</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="main_panel_3">
+                    <div class="footer_imgs footer_imgs_slider2">
+                        <div class="footer_img">
+                            <img src="assets/img/footer_imgs/auraeko.svg">
+                        </div>
+
+                        <div class="footer_img">
+                            <img src="assets/img/footer_imgs/rlg.svg">
+                        </div>
+
+                        <div class="footer_img">
+                            <img src="assets/img/footer_imgs/eurorec.svg">
+                        </div>
+
+                        <div class="footer_img">
+                            <img src="assets/img/footer_imgs/elsmieci.svg">
+                        </div>
+
+                        <div class="footer_img">
+                            <img src="assets/img/footer_imgs/mbrecy.svg">
+                        </div>
+
+                        <div class="footer_img">
+                            <img src="assets/img/footer_imgs/mayav.svg">
+                        </div>
+                    </div>
+                </div>
+
+<!--                <div class="main_panel_4 panel_footer">-->
+<!--                    <div class="row align-items-end">-->
+<!--                        <div class="col-md-6">-->
+<!--                            <ul>-->
+<!--                                <li class="footer_address">-->
+<!--                                    Koordynatorzy-->
+<!--                                </li>-->
+<!--                                <li class="footer_phone">-->
+<!--                                    <a href="tel:+48 518 934 800">518 934 800</a>-->
+<!--                                    <a href="tel:+48 518 934 800">518 934 800</a>-->
+<!--                                </li>-->
+<!--                                <li class="footer_mail">-->
+<!--                                    <a href="mailto:program@polskastolicarecyklingu.pl">program@polskastolicarecyklingu.pl</a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-6 text-end">-->
+<!--                            <span id="last_updated">Ostatnia aktualizacja: 02.09.2023 r.</span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+</html>

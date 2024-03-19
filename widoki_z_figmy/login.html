@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PSR</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+          integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+          integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+            integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</head>
+<body>
+
+<header id="header" class="fixed-top">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.svg">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#oprogramie">O programie</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ekozwroty">EKOzwrot</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#HomeForm">Formularz</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Regulamin</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Kontakt</a>
+                    </li>
+
+                    <li class="nav-item nav-item-login">
+                        <a class="nav-link" href="login.html">Zaloguj się</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main id="main">
+    <section class="form-login">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-login-wrap">
+                    <form class="needs-validation" novalidate>
+                        <h1>Zaloguj się</h1>
+
+                        <div class="mb-3">
+                            <input type="text" placeholder="Login" class="form-control" id="form_login"
+                                   name="form_login" aria-describedby="nazwaInstytucji" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" placeholder="Hasło" class="form-control" id="form_pass"
+                                   name="form_pass" aria-describedby="nazwaInstytucji" required>
+                            <button class="form_hide_pass">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="29" viewBox="0 0 42 29"
+                                     fill="none">
+                                    <g clip-path="url(#clip0_46_11918)">
+                                        <path d="M35.9954 1.4744C35.9744 1.6676 35.8275 1.75912 35.7225 1.8608C34.6728 2.87763 33.623 3.89446 32.5733 4.91129C24.4063 12.8324 16.2394 20.7433 8.06192 28.6543C7.58953 29.1118 7.58953 29.1118 7.11715 28.6543C6.81273 28.3492 6.5083 28.0442 6.18289 27.7595C5.93095 27.5459 5.95194 27.3731 6.19338 27.19C6.27736 27.129 6.34035 27.0477 6.41383 26.9765C15.578 18.0996 24.7317 9.23282 33.8959 0.366059C34.3998 -0.12202 34.3998 -0.12202 34.8932 0.366059C35.1871 0.650771 35.4916 0.935484 35.7855 1.23036C35.859 1.30154 35.9324 1.40323 35.9954 1.4744Z"
+                                              fill="#8E8E8E"/>
+                                        <path d="M4.95488 18.0792L1.97363 15.1914C1.72169 14.9474 1.72169 14.561 1.97363 14.3271L5.47975 10.9309C9.6997 6.84324 15.3053 4.59604 21.2678 4.59604C22.7479 4.59604 24.2071 4.7384 25.6347 5.00278C25.9286 5.05362 26.2226 4.97227 26.4325 4.76891C26.9364 4.28083 26.674 3.44703 25.9811 3.31484C18.339 1.8506 10.1196 3.97578 4.20957 9.70053L0.703446 13.0967C-0.241318 14.0119 -0.241318 15.4965 0.703446 16.4116L3.6847 19.2994C4.83941 20.4179 6.0781 21.3941 7.37978 22.238C7.72619 22.4617 8.18808 22.4109 8.4925 22.1262L8.503 22.116C8.9019 21.7296 8.82841 21.0992 8.36653 20.7941C7.15933 20.0112 6.01512 19.096 4.95488 18.0792Z"
+                                              fill="#8E8E8E"/>
+                                        <path d="M37.0455 10.9207L40.0267 13.8085C40.2787 14.0526 40.2787 14.439 40.0267 14.6728L36.5311 18.0792C32.3111 22.1669 26.7056 24.4141 20.743 24.4141C19.2419 24.4141 17.7618 24.2717 16.3236 23.9972C16.0402 23.9463 15.7358 24.0277 15.5363 24.231L15.5258 24.2412C15.0325 24.7191 15.2844 25.5529 15.9772 25.6851C23.6298 27.1798 31.8703 25.0445 37.8013 19.3096L41.3074 15.9134C42.2522 14.9982 42.2522 13.5136 41.3074 12.5985L38.3156 9.70053C37.1504 8.57185 35.9013 7.58552 34.5786 6.73139C34.2322 6.50768 33.7703 6.55853 33.4659 6.84324L33.4554 6.85341C33.0565 7.2398 33.1299 7.87024 33.5918 8.17529C34.82 8.96841 35.9852 9.89373 37.0455 10.9207Z"
+                                              fill="#8E8E8E"/>
+                                        <path d="M25.834 14.4999C25.834 17.0827 23.6611 19.1774 21.0052 19.1774C20.7323 19.1774 20.4594 19.157 20.1969 19.1062C19.714 19.5739 19.2312 20.0518 18.7378 20.5196C19.4411 20.7636 20.2074 20.906 21.0052 20.906C24.6583 20.906 27.6186 18.0385 27.6186 14.4999C27.6186 13.7272 27.4821 12.995 27.2197 12.3036C26.7368 12.7713 26.2539 13.2492 25.7605 13.717C25.813 13.9712 25.834 14.2356 25.834 14.4999Z"
+                                              fill="#8E8E8E"/>
+                                        <path d="M16.1659 14.5C16.1659 11.9172 18.3389 9.82257 20.9947 9.82257C21.2571 9.82257 21.5091 9.84291 21.7505 9.88358C22.2334 9.41584 22.7268 8.93793 23.2097 8.47019C22.5168 8.22615 21.7715 8.10413 20.9842 8.10413C17.3311 8.10413 14.3708 10.9716 14.3708 14.5102C14.3708 15.2626 14.5073 15.9846 14.7593 16.6658C15.2421 16.1981 15.7355 15.7202 16.2184 15.2524C16.1869 14.9982 16.1659 14.7542 16.1659 14.5Z"
+                                              fill="#8E8E8E"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_46_11918">
+                                            <rect width="42" height="29" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="mb-3">
+                            <a href="reset_password.html" class="not_rememb_pass">Nie pamiętasz hasła?</a>
+
+                        </div>
+
+                        <button class="btn btn-primary" type="submit">Zaloguj się</button>
+
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="check_remember">
+                            <label class="form-check-label" for="check_remember">Zapamiętaj mnie</label>
+                        </div>
+
+                        <div class="mb-3 form-register-info">
+                            <p class="form-register-info_one">Nie masz jeszcze konta? </p>
+                            <a href="/#HomeForm">Zarejestruj się</a>
+                            <p class="form-register-info_two">
+                                Kontynuując, akceptujesz Warunki korzystania z serwisu, Politykę prywatności oraz Warunki korzystania z plików cookie.
+                            </p>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-section home-section-10">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="home-logo_slider">
+                        <div class="home-logo_slide">
+                            <img src="assets/img/home_slider/Warstwa_1.png">
+                        </div>
+                        <div class="home-logo_slide">
+                            <img src="assets/img/home_slider/logo_1_.png">
+                        </div>
+                        <div class="home-logo_slide">
+                            <img src="assets/img/home_slider/logo_21.png">
+                        </div>
+                        <div class="home-logo_slide">
+                            <img src="assets/img/home_slider/image_14.png">
+                        </div>
+                        <div class="home-logo_slide">
+                            <img src="assets/img/home_slider/image_18.png">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <img src="assets/img/footer_logo.svg">
+                </div>
+                <div class="col-md-5">
+                    <h3>Fundacja Odzyskaj Środowisko</h3>
+                    <ul>
+                        <li class="footer_address">
+                            Karola Olszewskiego 20, 25-663 Kielce
+                        </li>
+                        <li class="footer_phone">
+                            <a href="tel:+48 789 375 514">789 375 514</a>
+                            <a href="tel:+48 514 844 967">514 844 967</a>
+                        </li>
+                        <li class="footer_mail">
+                            <a href="mailto:pierwszyratownik@odzyskajsrodowisko.pl">pierwszyratownik@odzyskajsrodowisko.pl</a>
+                        </li>
+
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-12 d-flex align-items-center justify-content-end">
+                    <ul class="link_sm">
+                        <li>Śledź nas:</li>
+                        <li><a href="#"><img src="assets/img/footer_imgs/Vector.png"></a></li>
+                        <li><a href="#"><img src="assets/img/footer_imgs/Insta.png"></a></li>
+                        <li><a href="#"><img src="assets/img/footer_imgs/Fb.png"></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-12 d-flex align-items-center justify-content-start">
+                    <ul class="links">
+                        <li><a href="#">Regulamin </a></li>
+                        <li><a href="#">Regulamin formularza</a></li>
+                        <li><a href="#">Polityka prywatności</a></li>
+                        <li><a href="#">Katalog nagród</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+</html>

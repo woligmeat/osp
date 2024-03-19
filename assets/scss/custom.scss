@@ -1,0 +1,16 @@
+//Variables
+@import "base/variables";
+
+//Bootstrap
+@import "../bootstrap/scss/bootstrap";
+
+//Custom Layout
+@import "base/base";
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/home";
+@import "pages/loginForm";
+@import "pages/adminPanel";
+@import "pages/administrationPanel";
+@import "pages/newPass";

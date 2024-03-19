@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PSR</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+          integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+          integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+            integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 " id="left-panel">
+            <div class="left-panel-wrap navbar navbar-expand-md">
+                <div class="left-panel-logo">
+                    <img src="assets/img/logo.svg">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="left-panel-menu collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="left-panel-menu-wr">
+                        <ul class="admin_menu">
+                            <li class="menu-link ">
+                                <a href="panel_1.html" class="menu-link-informations">Strona główna</a>
+                            </li>
+                            <li class="menu-link">
+                                <a href="panel_2.html" class="menu-link-documents">Dokumenty</a>
+                            </li>
+                            <li class="menu-link">
+                                <a href="panel_4.html" class="menu-link-points">Punkty</a>
+                            </li>
+                        </ul>
+
+                        <ul class="admin_menu">
+                            <li class="menu-link menu-link-active">
+                                <a href="panel_5.html" class="menu-link-profile">Ustawienia</a>
+                            </li>
+                            <li class="menu-link">
+                                <a href="panel_6.html" class="menu-link-logout">Wyloguj się</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10" id="main-content">
+            <div class="main-content-wrap">
+                <div class="panel_5_1">
+                    <h1>Twój profil</h1>
+                </div>
+
+                <div class="panel_5_2">
+                    <h2 class="school_name">OSP w Ożarowie</h2>
+
+<!--                    <h3>Twój indywidualny Kod instytucji: <span>KIE0001</span></h3>-->
+                </div>
+
+
+                <div class="panel_5_3">
+                    <h2 class="sec_name">Koordynator projektu:</h2>
+                    <p>
+                        Anna Nowak<br>
+                        785 222 111
+                    </p>
+                </div>
+
+                <div class="panel_5_3">
+                    <h2 class="sec_name">Adres:</h2>
+                    <p>
+                        ul. Nowa 2<br>
+                        25-640 Kielce<br>
+                        szkola@gmail.com
+                    </p>
+                </div>
+
+                <div class="panel_5_4">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editData">
+                        Edytuj dane
+                    </button>
+
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#changePassword">
+                        Zmień hasło
+                    </button>
+
+                </div>
+
+                <div class="main_panel_3">
+                    <div class="footer_imgs footer_imgs_slider2">
+                        <div class="footer_img">
+                            <img src="assets/img/home_slider/Warstwa_1.png">
+                        </div>
+
+                        <div class="footer_img">
+                            <img src="assets/img/home_slider/logo_1_.png">
+                        </div>
+
+                        <div class="footer_img">
+                            <img src="assets/img/home_slider/logo_21.png">
+                        </div>
+
+                        <div class="footer_img">
+                            <img src="assets/img/home_slider/image_14.png">
+                        </div>
+
+                        <div class="footer_img">
+                            <img src="assets/img/home_slider/image_18.png">
+                        </div>
+
+                        <div class="footer_img">
+                            <img src="assets/img/footer_imgs/odzyskaj.png">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal editData -->
+<div class="modal fade" id="editData" tabindex="-1" aria-labelledby="editDataLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title" id="editDataLabeL">Edytuj dane</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="form_instyt" class="form-label form-label-required">Koordynator projektu</label>
+                        <input type="text" placeholder="Anna Nowak" class="form-control" id="form_instyt"
+                               name="form_instyt" aria-describedby="nazwaInstytucji" required>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="form_koordynator_telefon" class="form-label form-label-required">Telefon
+                                    Koordynatora</label>
+                                <input type="text" placeholder="+48 123-123-123" class="form-control"
+                                       id="form_koordynator_telefon" name="form_koordynator_telefon"
+                                       aria-describedby="telefonKoordynatora" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="form_koordynator_email" class="form-label form-label-required">Adres
+                                    e-mail Koordynatora</label>
+                                <input type="email" placeholder="Adres e-mail" class="form-control"
+                                       id="form_koordynator_email" name="form_koordynator_email"
+                                       aria-describedby="emailKoordynatora" required>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Zapisz zmiany</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Anuluj</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal changePassword -->
+<div class="modal fade" id="changePassword" tabindex="-1" aria-labelledby="changePasswordLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title" id="changePasswordLabel">Ustaw nowe hasło</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="form_oldPass" class="form-label form-label-required">Stare hasło</label>
+                        <input type="password" placeholder="Wpisz stare hasło " class="form-control" id="form_oldPass"
+                               name="form_oldPass" aria-describedby="form_oldPass" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="form_newPass" class="form-label form-label-required">Nowe hasło</label>
+                        <input type="password" placeholder="Wpisz nowe hasło " class="form-control" id="form_newPass"
+                               name="form_newPass" aria-describedby="form_newPass" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="form_newPassRepeat" class="form-label form-label-required">Powtórz nowe hasło</label>
+                        <input type="password" placeholder="Wpisz ponownie nowe hasło " class="form-control" id="form_newPassRepeat"
+                               name="form_newPassRepeat" aria-describedby="form_newPassRepeat" required>
+                    </div>
+
+                    <p>
+                        Nowe hasło powinno być nie krótsze niż 8 znaków, zawierać przynajmniej jedną wielką literę, małą literę i cyfrę
+                    </p>
+
+
+
+
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Zapisz zmiany</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Anuluj</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+</html>
