@@ -65,9 +65,12 @@
             color: inherit;
             text-decoration: unset;
 
-            &[href*="mailto"] {
-              font-size: 12px;
+            @media all and (max-width: 575px) {
+              &[href*="mailto"] {
+                font-size: 12px;
+              }
             }
+
           }
 
           &.footer_address {
