@@ -12335,8 +12335,13 @@ form .thank_text p {
   z-index: 0;
   margin-bottom: 30px;
 }
+.home-section-10 .home-logo_slider .slick-track {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 .home-section-10 .home-logo_slider .home-logo_slide img {
-  max-width: 70%;
+  max-width: 80%;
   margin: auto;
   display: block;
 }
@@ -12869,6 +12874,11 @@ form .thank_text p {
     display: block;
     max-width: 100%;
   }
+}
+#main-content .main-content-wrap .main_panel_3 .footer_imgs_slider2 .slick-track {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 #main-content .main-content-wrap .main_panel_4,
 #main-content .main-content-wrap .panel_footer {

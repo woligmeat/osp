@@ -461,6 +461,14 @@
           }
         }
       }
+
+      .footer_imgs_slider2 {
+        .slick-track {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+        }
+      }
     }
 
     .main_panel_4,

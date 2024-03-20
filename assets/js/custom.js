@@ -24,9 +24,10 @@ jQuery(document).ready(function ($) {
         dots: false,
         infinite: true,
         speed: 300,
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 1,
-        variableWidth: true,
+        variableWidth: false,
+        arrows: false,
         autoplay: true,
         responsive: [
             {
@@ -119,10 +120,11 @@ jQuery(document).ready(function ($) {
         dots: false,
         infinite: true,
         speed: 300,
-        autoplay: true,
-        slidesToShow: 6,
+        slidesToShow: 5,
         slidesToScroll: 1,
-        variableWidth: true,
+        variableWidth: false,
+        arrows: false,
+        autoplay: true,
         responsive: [
             {
                 breakpoint: 1024,
@@ -141,6 +143,7 @@ jQuery(document).ready(function ($) {
             {
                 breakpoint: 480,
                 settings: {
+                    variableWidth: false,
                     slidesToShow: 2,
                     slidesToScroll: 1
                 }

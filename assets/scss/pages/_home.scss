@@ -1334,9 +1334,18 @@ form {
     z-index: 0;
     margin-bottom: 30px;
 
+    //@media all and (max-width: 575px) {
+      .slick-track{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+    //}
+
     .home-logo_slide {
       img {
-        max-width: 70%;
+        max-width: 80%;
         margin: auto;
         display: block;
       }
